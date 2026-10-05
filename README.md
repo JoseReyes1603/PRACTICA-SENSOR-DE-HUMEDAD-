@@ -1,5 +1,5 @@
 # PRACTICA-SENSOR-DE-HUMEDAD-
-## Código
+## Codigo
 [main.txt](Codigo/Main.txt)
 ## Imágenes 
 ## Video 
