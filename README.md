@@ -8,3 +8,4 @@
 ## Video 
 [Ver video en YouTube](https://youtube.com/shorts/BPS_Zkax_Oo?feature=share)
 ## Resultados 
+[Ver reporte de la práctica (PDF)](Practica_Monitor_Humedad_UNO_R3.pdf)
