@@ -1,1 +1,21 @@
+// ===== Monitor de humedad del suelo - Arduino UNO R3 =====
 
+const int PIN_SENSOR = A0;   // Señal del sensor
+const int PIN_LED    = 13;   // LED integrado (alerta de riego)
+
+// ===== CALIBRACIÓN (ajustar con el sensor real) =====
+// 1. Deja el sensor al aire o en tierra seca y anota la lectura -> VALOR_SECO
+// 2. Mételo en tierra muy mojada o en agua y anota la lectura   -> VALOR_MOJADO
+// (El UNO R3 lee de 0 a 1023 con 10 bits, no hace falta configurarlo)
+const int VALOR_SECO   = 1020;  // lectura al aire (ya la mediste)
+const int VALOR_MOJADO = 400;   // provisional, ajústalo con el paso de abajo
+
+// Porcentaje mínimo de humedad para considerar la tierra húmeda
+const int UMBRAL_PORCENTAJE = 40;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(PIN_LED, OUTPUT);
+
+  Serial.println(F("=== Monitor de humedad del suelo - UNO R3 ==="));
+}
